@@ -1,0 +1,12 @@
+# Do not hand edit this file. To make changes right click
+# on the project and select "Configure Monkey Barrels".
+
+StatusIconFonts = [..\StatusIconFonts\monkey.jungle]
+base.barrelPath = $(base.barrelPath);$(StatusIconFonts)
+
+ScreenPicker = [..\ScreenPicker\monkey.jungle]
+base.barrelPath = $(base.barrelPath);$(ScreenPicker)
+
+HrvAlgorithms = [..\HrvAlgorithms\monkey.jungle]
+base.barrelPath = $(base.barrelPath);$(HrvAlgorithms)
+

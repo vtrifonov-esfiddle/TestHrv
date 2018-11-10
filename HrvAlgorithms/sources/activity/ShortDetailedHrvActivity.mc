@@ -5,7 +5,7 @@ module HrvAlgorithms {
 			HrActivity.initialize(fitSession);
 		}
 		
-		private var mHeartbeatIntervalsSensor;		
+		protected var mHeartbeatIntervalsSensor;		
 		private var mHrvMonitor;
 		
 		
