@@ -18,7 +18,7 @@ class WaitingHrvDelegate extends ScreenPicker.ScreenPickerDelegate {
 	private var mNoHrvSeconds;
 	private var mHrvReadySuccessCount;
 	private const MinSecondsNoHrvDetected = 3;
-	private const MinHrvReadySuccessCount = 10;
+	private const MinHrvReadySuccessCount = 2;
 	
 	function onIsHrvReadyListener(heartBeatIntervals) {
 		if (heartBeatIntervals.size() == 0) {
