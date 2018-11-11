@@ -20,9 +20,10 @@ class SummaryViewDelegate extends ScreenPicker.ScreenPickerDelegate {
 	private const PagesCount = 4;
 	
 	private function setPageIndexes() {			
-		me.mHrvRmssdPageIndex = 1;			
-		me.mHrvPnnxPageIndex = me.mHrvRmssdPageIndex + 1;	
-		me.mHrvSdrrPageIndex = me.mHrvRmssdPageIndex + 2;
+		me.mHrvRmssdPageIndex = 0;			
+		me.mHrvPnnxPageIndex = 1;	
+		me.mHrvSdrrPageIndex = 2;
+		me.mHrPageIndex = 3;
 	}
 	
 	private var mPagesCount;
@@ -31,6 +32,7 @@ class SummaryViewDelegate extends ScreenPicker.ScreenPickerDelegate {
 	private var mHrvSdrrPageIndex;
 	private var mHrvPnnxPageIndex;
 	private var mStressPageIndex;
+	private var mHrPageIndex;
 	
 	private const InvalidPageIndex = -1;
 
@@ -40,7 +42,7 @@ class SummaryViewDelegate extends ScreenPicker.ScreenPickerDelegate {
 	
 	function createScreenPickerView() {
 		var details;
-		if (me.mSelectedPageIndex == 0) {
+		if (me.mSelectedPageIndex == mHrPageIndex) {
 			details = me.createDetailsPageHr();
 		} 
 		else if (me.mSelectedPageIndex == mHrvRmssdPageIndex){
@@ -53,7 +55,7 @@ class SummaryViewDelegate extends ScreenPicker.ScreenPickerDelegate {
 			details = me.createDetailsPageHrvSdrr();
 		} 
 		else {
-			details = me.createDetailsPageHr();
+			details = me.createDetailsPageHrvRmssd();
 		}
 		return new ScreenPicker.ScreenPickerDetailsView(details);
 	}	
@@ -68,16 +70,6 @@ class SummaryViewDelegate extends ScreenPicker.ScreenPickerDelegate {
         details.backgroundColor = Gfx.COLOR_WHITE;
         details.title = "Summary HR";
         details.titleColor = Gfx.COLOR_BLACK;
-
-        
-        var timeIcon = new ScreenPicker.Icon({       
-        	:font => StatusIconFonts.fontAwesomeFreeSolid,
-        	:symbol => StatusIconFonts.Rez.Strings.faHourglassEnd,
-        	:color=>Graphics.COLOR_BLACK  	
-    	});
-        details.detailLines[1].icon = timeIcon;
-        details.detailLines[1].value.color = Gfx.COLOR_BLACK;
-        details.detailLines[1].value.text = TimeFormatter.format(me.mSummaryModel.elapsedTime);
         
         var hrMinIcon = new ScreenPicker.Icon({       
         	:font => StatusIconFonts.fontMeditateIcons,

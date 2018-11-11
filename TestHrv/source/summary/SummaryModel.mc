@@ -2,7 +2,6 @@ using Toybox.System;
 
 class SummaryModel {
 	function initialize(activitySummary) {
-		me.elapsedTime = activitySummary.hrSummary.elapsedTimeSeconds; 
 		me.maxHr = me.initializeHeartRate(activitySummary.hrSummary.maxHr);
 		me.avgHr = me.initializeHeartRate(activitySummary.hrSummary.averageHr);
 		me.minHr = me.initializeHeartRate(activitySummary.hrSummary.minHr);
@@ -43,9 +42,7 @@ class SummaryModel {
 	}
 		
 	private const InvalidHeartRate = "--";
-	
-	var elapsedTime;
-	
+		
 	var maxHr;
 	var avgHr;
 	var minHr;	
