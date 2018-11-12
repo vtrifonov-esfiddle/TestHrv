@@ -20,6 +20,8 @@ A Garmin app that measures [HRV](https://en.wikipedia.org/wiki/Heart_rate_variab
   - average
   - maximum
 
+## [Download](https://apps.garmin.com/en-US/apps/0bdc0e75-9baa-417a-8c9f-e976662a5d2e)
+
 ## Dependencies
 
 - Status Icons - [Font Awesome free](https://fontawesome.com/license) (SIL OFL 1.1 License) 
