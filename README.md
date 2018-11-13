@@ -6,6 +6,8 @@ A Garmin app that measures [HRV](https://en.wikipedia.org/wiki/Heart_rate_variab
 
 ## Measurements
 
+Measurements taken from the built-in optical HR sensor on the watch, so no strap required. Requires Connect IQ 3+ compatible device that tracks Heart Beat Interval data.
+
 - [HRV](https://en.wikipedia.org/wiki/Heart_rate_variability)(Heart Rate Variability)
     - RMSSD - Root Mean Square of Successive Differences (beat-to-beat intervals)
     - pNN20 - % of successive beat-to-beat intervals that differ by more than 20 ms
@@ -21,6 +23,8 @@ A Garmin app that measures [HRV](https://en.wikipedia.org/wiki/Heart_rate_variab
   - maximum
 
 ## [Download](https://apps.garmin.com/en-US/apps/0bdc0e75-9baa-417a-8c9f-e976662a5d2e)
+
+Link to the Garmin Connect IQ app store.
 
 ## Dependencies
 
