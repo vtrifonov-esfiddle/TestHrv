@@ -6,9 +6,7 @@ A Garmin app that measures [HRV](https://en.wikipedia.org/wiki/Heart_rate_variab
 
 ## Measurements
 
-Measurements taken from the built-in optical HR sensor on the watch, so no strap required. Requires Connect IQ 3+ compatible device that tracks Heart Beat Interval data.
-
-- [HRV](https://en.wikipedia.org/wiki/Heart_rate_variability)(Heart Rate Variability)
+- [HRV](https://en.wikipedia.org/wiki/Heart_rate_variability) (Heart Rate Variability)
     - RMSSD - Root Mean Square of Successive Differences (beat-to-beat intervals)
     - pNN20 - % of successive beat-to-beat intervals that differ by more than 20 ms
     - pNN50 - % of successive beat-to-beat intervals that differ by more than 50 ms
@@ -17,10 +15,19 @@ Measurements taken from the built-in optical HR sensor on the watch, so no strap
     - SDRR - [Standard Deviation](https://en.wikipedia.org/wiki/Standard_deviation) of beat-to-beat intervals      
     - HRV RMSSD 30 Sec Window - RMSSD calculated for consecutive 30 second intervals    
     - HR from heartbeat - beat-to-beat interval converted to HR
-- HR(Heart Rate)
+- HR (Heart Rate)
   - minimum
   - average
   - maximum
+
+## Requirements
+
+- Connect IQ 3+ compatible device that tracks Heart Beat Interval data
+- Measurements taken from the built-in optical HR sensor on the watch
+  - For reliable readings minimise wrist movement
+  - No strap required
+- HR straps not supported
+- The app starts measurements automatically as soon as stable sensor readings are detected 
 
 ## [Download](https://apps.garmin.com/en-US/apps/0bdc0e75-9baa-417a-8c9f-e976662a5d2e)
 
