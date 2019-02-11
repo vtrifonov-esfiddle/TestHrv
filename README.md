@@ -26,7 +26,7 @@ Link to the Garmin Connect IQ app store.
 
 ## Viewing Results in Garmin Connect
 
-Results are saved as a Garmin Connect activity category **Other** named **Test HRV**: ![TestHrvActivity](./Screenshots/TestHrvActivity.png)
+Results are saved as a Garmin Connect activity category **Other** named **Test HRV**: ![TestHrvActivity](./Screenshots/TestHrvOverviewActivity.png)
 
 The summary data is saved under Stats, section Connect IQ:
 
