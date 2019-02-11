@@ -4,6 +4,10 @@ A Garmin app that measures [HRV](https://en.wikipedia.org/wiki/Heart_rate_variab
 
 ![TestHrvDemo](TestHrvDemo.gif)
 
+## [Download](https://apps.garmin.com/en-US/apps/0bdc0e75-9baa-417a-8c9f-e976662a5d2e)
+
+Link to the Garmin Connect IQ app store.
+
 ## Measurements
 
 - [HRV](https://en.wikipedia.org/wiki/Heart_rate_variability) (Heart Rate Variability)
@@ -20,6 +24,17 @@ A Garmin app that measures [HRV](https://en.wikipedia.org/wiki/Heart_rate_variab
   - average
   - maximum
 
+## Viewing Results in Garmin Connect
+
+Results are saved as a Garmin Connect activity category **Other** named **Test HRV**: ![TestHrvActivity](./Screenshots/TestHrvActivity.png)
+
+The summary data is saved under Stats, section Connect IQ:
+
+![SummaryStats](./Screenshots/SummaryStats.png) 
+
+The extra graphs are shown next to the built-in Garmin graphs:
+![Graphs](./Screenshots/Graphs.png)
+
 ## Requirements
 
 - Connect IQ 3+ compatible device that tracks Heart Beat Interval data
@@ -28,10 +43,6 @@ A Garmin app that measures [HRV](https://en.wikipedia.org/wiki/Heart_rate_variab
   - No strap required
 - HR straps not supported
 - The app starts measurements automatically as soon as stable sensor readings are detected 
-
-## [Download](https://apps.garmin.com/en-US/apps/0bdc0e75-9baa-417a-8c9f-e976662a5d2e)
-
-Link to the Garmin Connect IQ app store.
 
 ## Dependencies
 
