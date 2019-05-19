@@ -4,6 +4,9 @@ module HrvAlgorithms {
 	class HeartbeatIntervalsSensor {
 		private const SessionSamplePeriodSeconds = 1;
 	
+		function initialize() {
+			me.enableHrSensor();
+		}
 		function start() {
 			Sensor.unregisterSensorDataListener();
 			Sensor.registerSensorDataListener(method(:onSessionSensorData), {
@@ -12,6 +15,14 @@ module HrvAlgorithms {
 			        :enabled => true
 			    }
 			});
+		}
+		
+		private function enableHrSensor() {		
+			Sensor.setEnabledSensors([Sensor.SENSOR_HEARTRATE]);
+		}
+
+		function disableHrSensor() {
+			Sensor.setEnabledSensors([]);
 		}
 		
 		function setOneSecBeatToBeatIntervalsSensorListener(listener) {

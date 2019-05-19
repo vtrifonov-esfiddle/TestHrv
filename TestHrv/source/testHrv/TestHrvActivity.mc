@@ -34,13 +34,15 @@ class TestHrvActivity extends HrvAlgorithms.ShortDetailedHrvActivity {
 		var summary = me.calculateSummaryFields();
 		me.finish();
 		me.mHeartbeatIntervalsSensor.stop();
-		
+		me.mHeartbeatIntervalsSensor.disableHrSensor();
+
 		var summaryViewDelegate = new SummaryViewDelegate(summary);
 		Ui.switchToView(summaryViewDelegate.createScreenPickerView(), summaryViewDelegate, Ui.SLIDE_LEFT);		
 	}
 	
 	function discardSession() {
 		me.stop();
+		me.mHeartbeatIntervalsSensor.disableHrSensor();
 		me.discard();
 		me.mHeartbeatIntervalsSensor.stop();
 	}

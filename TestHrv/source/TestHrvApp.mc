@@ -16,8 +16,7 @@ class TestHrvApp extends Application.AppBase {
     }
 
     // Return the initial view of your application here
-    function getInitialView() {
-    	HrvAlgorithms.HrActivity.enableHrSensor(); 	        	
+    function getInitialView() { 	        	
     	var heartbeatIntervalsSensor = new HrvAlgorithms.HeartbeatIntervalsSensor();
     	var waitingHrvDelegate = new WaitingHrvDelegate(heartbeatIntervalsSensor);
         return [ waitingHrvDelegate.createScreenPickerView(), waitingHrvDelegate ];
