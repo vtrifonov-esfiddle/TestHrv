@@ -7,6 +7,11 @@
             <iq:product id="fenix5splus"/>
             <iq:product id="fenix5x"/>
             <iq:product id="fenix5xplus"/>
+            <iq:product id="fenix6"/>
+            <iq:product id="fenix6pro"/>
+            <iq:product id="fenix6s"/>
+            <iq:product id="fenix6spro"/>
+            <iq:product id="fenix6xpro"/>
             <iq:product id="fenixchronos"/>
             <iq:product id="fr245"/>
             <iq:product id="fr245m"/>
@@ -23,6 +28,8 @@
             <iq:product id="vivoactive3d"/>
             <iq:product id="vivoactive3m"/>
             <iq:product id="vivoactive3mlte"/>
+            <iq:product id="vivoactive4"/>
+            <iq:product id="vivoactive4s"/>
         </iq:products>
         <iq:permissions>
             <iq:uses-permission id="Fit"/>
@@ -33,7 +40,7 @@
             <iq:language>eng</iq:language>
         </iq:languages>
         <iq:barrels>
-            <iq:depends name="HrvAlgorithms" version="1.0.0"/>
+            <iq:depends name="HrvAlgorithms" version="1.1.0"/>
             <iq:depends name="ScreenPicker" version="1.0.0"/>
             <iq:depends name="StatusIconFonts" version="1.0.0"/>
         </iq:barrels>
