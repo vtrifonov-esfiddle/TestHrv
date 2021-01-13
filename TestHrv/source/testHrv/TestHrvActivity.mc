@@ -10,7 +10,7 @@ class TestHrvActivity extends HrvAlgorithms.ShortDetailedHrvActivity {
 	private var mTestHrvModel;
 		
 	function initialize(testHrvModel, heartbeatIntervalsSensor) {
-		var fitSessionSpec = HrvAlgorithms.FitSessionSpec.createCardio("Test HRV");
+		var fitSessionSpec = HrvAlgorithms.FitSessionSpec.createBreathworks("Test HRV");
 
 		me.mTestHrvModel = testHrvModel;	
 		HrvAlgorithms.ShortDetailedHrvActivity.initialize(fitSessionSpec, heartbeatIntervalsSensor);			
